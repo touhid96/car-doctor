@@ -4,7 +4,7 @@ import img from "../../assets/images/login/login.svg";
 import { AuthContext } from "../../providor/AuthProvider";
 const Login = () => {
   const { signIn } = useContext(AuthContext);
-  const handleLogin = () => {
+  const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
